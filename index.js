@@ -14,7 +14,7 @@ mongoose.connect('mongodb+srv://swethasundaram:sweths2005@mycluster.0dm5a.mongod
     .then(()=> console.log('database connected..'))
     .catch((err) => console.log(err))
 
-
+app.get('/',(req,res)=>{res.send('server reacted...')})
 
 
     console.log("updated")
